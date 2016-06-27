@@ -23,7 +23,7 @@ public class CustomRecursiveTask extends RecursiveTask<Integer> {
 
         if (arr.length > THRESHOLD) {
 
-            return ForkJoinTask.invokeAll(createSubtasks())
+            return ForkJoinTask.invokeAll(createSubTasks())
                     .stream()
                     .mapToInt(ForkJoinTask::join)
                     .sum();
@@ -33,12 +33,13 @@ public class CustomRecursiveTask extends RecursiveTask<Integer> {
         }
     }
 
-    private Collection<CustomRecursiveTask> createSubtasks() {
+    private Collection<CustomRecursiveTask> createSubTasks() {
         List<CustomRecursiveTask> dividedTasks = new ArrayList<>();
         dividedTasks.add(new CustomRecursiveTask(
                 Arrays.copyOfRange(arr, 0, arr.length / 2)));
         dividedTasks.add(new CustomRecursiveTask(
                 Arrays.copyOfRange(arr, arr.length / 2, arr.length)));
+
         return dividedTasks;
     }
 

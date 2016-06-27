@@ -13,14 +13,14 @@ import static junit.framework.TestCase.assertTrue;
 
 public class PizzaTest {
     @Test
-    public void givenPizaOrder_whenReady_thenDeliverable() {
+    public void givenPizzaOrder_whenReady_thenDeliverable() {
         Pizza testPz = new Pizza();
         testPz.setStatus(Pizza.PizzaStatus.READY);
         assertTrue(testPz.isDeliverable());
     }
 
     @Test
-    public void givenPizaOrders_whenRetrievingUnDeliveredPzs_thenCorrectlyRetrieved() {
+    public void givenPizzaOrders_whenRetrievingUnDeliveredPzs_thenCorrectlyRetrieved() {
         List<Pizza> pzList = new ArrayList<>();
         Pizza pz1 = new Pizza();
         pz1.setStatus(Pizza.PizzaStatus.DELIVERED);
@@ -44,7 +44,7 @@ public class PizzaTest {
     }
 
     @Test
-    public void givenPizaOrders_whenGroupByStatusCalled_thenCorrectlyGrouped() {
+    public void givenPizzaOrders_whenGroupByStatusCalled_thenCorrectlyGrouped() {
 
         List<Pizza> pzList = new ArrayList<>();
         Pizza pz1 = new Pizza();
@@ -71,7 +71,7 @@ public class PizzaTest {
     }
 
     @Test
-    public void givenPizaOrder_whenDelivered_thenPizzaGetsDeliveredAndStatusChanges() {
+    public void givenPizzaOrder_whenDelivered_thenPizzaGetsDeliveredAndStatusChanges() {
         Pizza pz = new Pizza();
         pz.setStatus(Pizza.PizzaStatus.READY);
         pz.deliver();
