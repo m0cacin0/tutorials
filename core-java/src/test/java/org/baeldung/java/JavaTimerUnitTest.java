@@ -44,7 +44,7 @@ public class JavaTimerUnitTest {
         final long period = 1000L;
         timer.scheduleAtFixedRate(repeatedTask, delay, period);
 
-        Thread.sleep(delay * 2);
+        Thread.sleep(delay * 2 * 10);
         timer.cancel();
     }
 

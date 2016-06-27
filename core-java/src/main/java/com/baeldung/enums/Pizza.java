@@ -85,11 +85,14 @@ public class Pizza {
                 .collect(Collectors.toList());
     }
 
-    public static EnumMap<PizzaStatus, List<Pizza>>
-    groupPizzaByStatus(List<Pizza> pzList) {
+    public static EnumMap<PizzaStatus, List<Pizza>> groupPizzaByStatus(List<Pizza> pzList) {
         return pzList.stream().collect(
-                Collectors.groupingBy(Pizza::getStatus,
-                        () -> new EnumMap<>(PizzaStatus.class), Collectors.toList()));
+                    Collectors.groupingBy(
+                            Pizza::getStatus,
+                            () -> new EnumMap<>(PizzaStatus.class),
+                            Collectors.toList()
+                    )
+        );
     }
 
     public void deliver() {
