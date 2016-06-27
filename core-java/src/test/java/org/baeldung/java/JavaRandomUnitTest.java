@@ -195,9 +195,9 @@ public class JavaRandomUnitTest {
 
     @Test
     public void givenUsingApache_whenGeneratingRandomStringBounded_thenCorrect() {
-        final int length = 10;
+        final int length = 16;
         final boolean useLetters = true;
-        final boolean useNumbers = false;
+        final boolean useNumbers = true;
         final String generatedString = RandomStringUtils.random(length, useLetters, useNumbers);
 
         System.out.println(generatedString);

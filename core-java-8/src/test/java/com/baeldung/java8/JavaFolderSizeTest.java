@@ -57,7 +57,10 @@ public class JavaFolderSizeTest {
         final long expectedSize = 136;
 
         final Path folder = Paths.get(path);
-        final long size = Files.walk(folder).filter(p -> p.toFile().isFile()).mapToLong(p -> p.toFile().length()).sum();
+        final long size = Files.walk(folder)
+                            .filter(p -> p.toFile().isFile())
+                            .mapToLong(p -> p.toFile().length())
+                            .sum();
 
         assertEquals(expectedSize, size);
     }
