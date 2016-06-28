@@ -1,6 +1,5 @@
 package com.insightfullogic.java8.exercises.chapter3;
 
-import com.insightfullogic.java8.answers.chapter3.Question1;
 import com.insightfullogic.java8.examples.chapter1.Album;
 import com.insightfullogic.java8.examples.chapter1.SampleData;
 import org.junit.Test;

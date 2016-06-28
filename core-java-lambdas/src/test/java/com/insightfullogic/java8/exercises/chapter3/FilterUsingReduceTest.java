@@ -1,6 +1,5 @@
 package com.insightfullogic.java8.exercises.chapter3;
 
-import com.insightfullogic.java8.answers.chapter3.FilterUsingReduce;
 import org.junit.Test;
 
 import java.util.Collections;
