@@ -75,6 +75,7 @@
         <module>xml</module>
 
         <module>lombok</module>
+        <module>core-java-lambdas</module>
     </modules>
 
 </project>
