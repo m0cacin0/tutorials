@@ -1,5 +1,6 @@
 package com.insightfullogic.java8.exercises.chapter3;
 
+import com.insightfullogic.java8.answers.chapter3.StringExercises;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -22,13 +23,13 @@ public class StringExercisesTest {
     }
 
     @Test
-    public void suppoertsNoLowercaseLetters() {
+    public void supportsNoLowercaseLetters() {
         assertEquals(0, StringExercises.countLowercaseLetters("ABCDEF"));
     }
 
     @Test
     public void noStringReturnedForEmptyList() {
-        assertFalse(StringExercises.mostLowercaseString(Collections.<String>emptyList()).isPresent());
+        assertFalse(StringExercises.mostLowercaseString(Collections.emptyList()).isPresent());
     }
 
     @Test
