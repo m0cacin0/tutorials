@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static com.insightfullogic.java8.exercises.chapter3.Question2.countBandMembersInternal;
+import static com.insightfullogic.java8.answers.chapter3.Question2.countBandMembersInternal;
 import static org.junit.Assert.assertEquals;
 
 public class Question2Test {
