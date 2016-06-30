@@ -80,6 +80,7 @@
 
         <module>lombok</module>
         <module>core-java-lambdas</module>
+        <module>spring-aop</module>
     </modules>
 
 </project>
