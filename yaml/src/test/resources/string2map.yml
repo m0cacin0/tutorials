@@ -1,0 +1,9 @@
+data1: AAA
+data2:
+  - aaa
+  - bbb
+  - ccc
+data3:
+  zzz: ZZZ
+  yyy: YYY
+  xxx: XXX
