@@ -81,6 +81,7 @@
         <module>lombok</module>
         <module>core-java-lambdas</module>
         <module>spring-aop</module>
+        <module>yaml</module>
     </modules>
 
 </project>
