@@ -14,6 +14,11 @@ public class EmployeeAfterAspect {
         System.out.println("Running After Advice. String argument passed=" + name);
     }
 
+//    @After("args(name, value)")
+//    public void logStringArguments2(String name, String value) {
+//        System.out.println("Running After Advice. String argument passed=" + name);
+//    }
+
     @AfterThrowing("within(com.journaldev.spring.model.Employee)")
     public void logExceptions(JoinPoint joinPoint) {
         System.out.println("Exception thrown in Employee Method=" + joinPoint.toString());
